@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Icons 예제</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    body {
+      padding: 40px 20px;
+      background-color: #f8f9fa;
+    }
+    .icon-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 10px;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      background: #fff;
+      height: 110px;
+      transition: box-shadow 0.15s ease-in-out;
+    }
+    .icon-box:hover {
+      box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+    }
+    .icon-box i {
+      font-size: 1.75rem;
+      margin-bottom: 8px;
+    }
+    .icon-box small {
+      color: #6c757d;
+      font-size: 0.75rem;
+      text-align: center;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="mb-5 text-center">
+      <h1 class="mb-2"><i class="bi bi-bootstrap-fill text-primary"></i> Bootstrap Icons 예제</h1>
+      <p class="text-muted">CDN으로 Bootstrap Icons를 불러와 다양하게 활용하는 예시 모음</p>
+    </header>
+
+    <!-- 1. 기본 아이콘 그리드 -->
+    <section>
+      <h2 class="h4 mb-3">1. 기본 아이콘 사용</h2>
+      <div class="row g-3">
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="icon-box"><i class="bi bi-house-door"></i><small>house-door</small></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="icon-box"><i class="bi bi-envelope"></i><small>envelope</small></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="icon-box"><i class="bi bi-gear"></i><small>gear</small></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="icon-box"><i class="bi bi-heart"></i><small>heart</small></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="icon-box"><i class="bi bi-star"></i><small>star</small></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="icon-box"><i class="bi bi-camera"></i><small>camera</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 크기와 색상 -->
+    <section>
+      <h2 class="h4 mb-3">2. 크기 &amp; 색상 조절 (CSS 활용)</h2>
+      <div class="d-flex align-items-end gap-4 flex-wrap">
+        <i class="bi bi-star-fill text-warning" style="font-size: 1rem;"></i>
+        <i class="bi bi-star-fill text-warning" style="font-size: 1.5rem;"></i>
+        <i class="bi bi-star-fill text-warning" style="font-size: 2rem;"></i>
+        <i class="bi bi-star-fill text-warning" style="font-size: 3rem;"></i>
+        <i class="bi bi-star-fill text-danger" style="font-size: 3rem;"></i>
+        <i class="bi bi-star-fill text-success" style="font-size: 3rem;"></i>
+        <i class="bi bi-star-fill text-primary" style="font-size: 3rem;"></i>
+      </div>
+    </section>
+
+    <!-- 3. 버튼 안에 아이콘 -->
+    <section>
+      <h2 class="h4 mb-3">3. 버튼과 함께 사용</h2>
+      <div class="d-flex flex-wrap gap-2">
+        <button class="btn btn-primary"><i class="bi bi-download me-1"></i> 다운로드</button>
+        <button class="btn btn-success"><i class="bi bi-check-circle me-1"></i> 저장</button>
+        <button class="btn btn-danger"><i class="bi bi-trash me-1"></i> 삭제</button>
+        <button class="btn btn-outline-secondary"><i class="bi bi-printer me-1"></i> 인쇄</button>
+        <button class="btn btn-dark rounded-circle p-2" style="width:44px;height:44px;">
+          <i class="bi bi-plus-lg"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- 4. 배지 알림 아이콘 -->
+    <section>
+      <h2 class="h4 mb-3">4. 알림 뱃지</h2>
+      <div class="d-flex gap-4">
+        <button type="button" class="btn btn-outline-secondary position-relative">
+          <i class="bi bi-bell fs-5"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            5
+          </span>
+        </button>
+        <button type="button" class="btn btn-outline-secondary position-relative">
+          <i class="bi bi-cart fs-5"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+            2
+          </span>
+        </button>
+        <button type="button" class="btn btn-outline-secondary position-relative">
+          <i class="bi bi-chat-dots fs-5"></i>
+          <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+            <span class="visually-hidden">New alerts</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 5. 네비게이션 목록 -->
+    <section>
+      <h2 class="h4 mb-3">5. 네비게이션 리스트</h2>
+      <div class="list-group" style="max-width: 320px;">
+        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center gap-2">
+          <i class="bi bi-speedometer2"></i> 대시보드
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center gap-2 active">
+          <i class="bi bi-person"></i> 프로필
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center gap-2">
+          <i class="bi bi-file-earmark-text"></i> 문서
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center gap-2">
+          <i class="bi bi-gear"></i> 설정
+        </a>
+      </div>
+    </section>
+
+    <!-- 6. 카드 예시 -->
+    <section>
+      <h2 class="h4 mb-3">6. 카드에서 아이콘 활용</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <i class="bi bi-cloud-upload display-4 text-primary"></i>
+              <h5 class="card-title mt-3">업로드</h5>
+              <p class="card-text text-muted">파일을 클라우드에 손쉽게 업로드하세요.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <i class="bi bi-shield-check display-4 text-success"></i>
+              <h5 class="card-title mt-3">보안</h5>
+              <p class="card-text text-muted">안전하게 데이터를 보호합니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <i class="bi bi-graph-up-arrow display-4 text-danger"></i>
+              <h5 class="card-title mt-3">분석</h5>
+              <p class="card-text text-muted">실시간으로 데이터를 분석하세요.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-muted small mt-5">
+      Bootstrap 5.3.3 &amp; Bootstrap Icons 1.11.3 (via jsDelivr CDN)
+    </footer>
+  </div>
+</body>
+</html>
